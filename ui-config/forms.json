@@ -254,8 +254,8 @@
                                 "name": "expiryYear",
                                 "validation": {
                                     "pattern": "^[0-9]{4}$",
-                                    "message": "Year must be less than start date",
-                                    "lessThan":"grantYear"
+                                    "message": "Year must be less than Grant year",
+                                    "greaterThan":"grantYear"
                                 }
                             },
                             {
