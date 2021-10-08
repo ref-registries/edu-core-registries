@@ -254,7 +254,8 @@
                                 "name": "expiryYear",
                                 "validation": {
                                     "pattern": "^[0-9]{4}$",
-                                    "message": "Year is not valid. Ex: 2016"
+                                    "message": "Year must be less than start date",
+                                    "lessThan":"grantYear"
                                 }
                             },
                             {
@@ -382,7 +383,10 @@
                                         {
                                             "name": "dob",
                                             "required": true,
-                                            "type": "date"
+                                            "type": "date",
+                                            "validation": {
+                                                "future":true
+                                            }
                                         },
                                         {
                                             "name": "identityHolder"
@@ -712,7 +716,10 @@
                                         {
                                             "name": "dob",
                                             "required": true,
-                                            "type": "date"
+                                            "type": "date",
+                                            "validation": {
+                                                "future":true
+                                            }
                                         },
                                         {
                                             "name": "identityHolder",
