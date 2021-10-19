@@ -277,6 +277,21 @@
                                         }
                                     }
                                 }
+                            },
+                            {
+                                "name": "notes",
+                                "custom": true,
+                                "element": {
+                                    "title": "Note",
+                                    "widget": {
+                                        "formlyConfig": {
+                                            "type": "string",
+                                            "fieldGroupClassName": "controls",
+                                            "className": "input",
+                                              "hideExpression": "!model.attest"
+                                        }
+                                    }
+                                }
                             }
                         ]
                     }
@@ -606,6 +621,21 @@
                                         }
                                     }
                                 }
+                            },
+                            {
+                                "name": "notes",
+                                "custom": true,
+                                "element": {
+                                    "title": "Note",
+                                    "widget": {
+                                        "formlyConfig": {
+                                            "type": "string",
+                                            "fieldGroupClassName": "controls",
+                                            "className": "input",
+                                              "hideExpression": "!model.attest"
+                                        }
+                                    }
+                                }
                             }
                         ]
                     }
@@ -906,6 +936,21 @@
                                             "templateOptions": {
                                                 "required": true
                                             }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "name": "notes",
+                                "custom": true,
+                                "element": {
+                                    "title": "Note",
+                                    "widget": {
+                                        "formlyConfig": {
+                                            "type": "string",
+                                            "fieldGroupClassName": "controls",
+                                            "className": "input",
+                                              "hideExpression": "!model.attest"
                                         }
                                     }
                                 }
