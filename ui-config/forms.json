@@ -8,7 +8,8 @@
                 "type": "entity",
                 "formclass": "row",
                 "header": "default",
-                "title": "Sign up / Create new account",
+                "title": "Register",
+                "isSignupForm":"true",
                 "fieldsets": [
                     {
                         "definition": "Institute",
@@ -23,6 +24,24 @@
                                 "validation": {
                                     "pattern": "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z0-9.-]+$",
                                     "message": "Email is not valid."
+                                }
+                            },
+                            {
+                                "name": "t&c",
+                                "custom": true,
+                                "required": true,
+                                "element": {
+                                    "title": "I accept Terms & Conditions ",
+                                    "widget": {
+                                        "formlyConfig": {
+                                            "type": "checkbox",
+                                            "fieldGroupClassName": "controls",
+                                            "className": "checkbox",
+                                            "templateOptions": {
+                                                "required": true
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         ]
@@ -173,6 +192,7 @@
                             {
                                 "name": "adminEmail",
                                 "required": true,
+                                "class": "form-check form-check-inline pl-5",
                                 "validation": {
                                     "pattern": "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z0-9.-]+$",
                                     "message": "Email is not valid."
@@ -181,6 +201,7 @@
                             {
                                 "name": "adminName",
                                 "required": true,
+                                "class": "form-check form-check-inline pl-5",
                                 "validation": {
                                     "pattern": "^[a-zA-Z]+ [a-zA-Z]+$",
                                     "message": "Name is not valid."
@@ -268,7 +289,8 @@
                 "type": "entity",
                 "formclass": "row",
                 "header": "default",
-                "title": "Sign up / Create new account",
+                "title": "Register",
+                "isSignupForm":"true",
                 "fieldsets": [
                     {
                         "definition": "Teacher",
@@ -313,6 +335,23 @@
                                             }
                                         }
                                     ]
+                                }
+                            },
+                            {
+                                "name": "t&c",
+                                "custom": true,
+                                "element": {
+                                    "title": "I accept Terms & Conditions ",
+                                    "widget": {
+                                        "formlyConfig": {
+                                            "type": "checkbox",
+                                            "fieldGroupClassName": "controls",
+                                            "className": "checkbox",
+                                            "templateOptions": {
+                                                "required": true
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         ]
@@ -579,7 +618,8 @@
                 "type": "entity",
                 "formclass": "row",
                 "header": "default",
-                "title": "Sign up / Create new account",
+                "title": "Register",
+                "isSignupForm":"true",
                 "fieldsets": [
                     {
                         "definition": "Student",
@@ -650,6 +690,7 @@
                                     "fields": [
                                         {
                                             "name": "fullName",
+                                            "description" : "as per ID(Aadhaar)",
                                             "required": true,
                                             "validation": {
                                                 "pattern": "^[a-zA-Z]+ [a-zA-Z]+$",
@@ -682,6 +723,23 @@
                                             }
                                         }
                                     ]
+                                }
+                            },
+                            {
+                                "name": "t&c",
+                                "custom": true,
+                                "element": {
+                                    "title": "I accept Terms & Conditions ",
+                                    "widget": {
+                                        "formlyConfig": {
+                                            "type": "checkbox",
+                                            "fieldGroupClassName": "controls",
+                                            "className": "checkbox",
+                                            "templateOptions": {
+                                                "required": true
+                                            }
+                                        }
+                                    }
                                 }
                             }
                         ]
@@ -808,18 +866,27 @@
                                     ]
                                 }
                             },
-                            {
-                                "name": "board",
-                                "required": true,
-                                "enum": [{"label": "CBSE Board", "value": "board-cbse"}]
-                            },
-                            {
-                                "name": "medium",
-                                "required": true
-                            },
+                            
                             {
                                 "name": "class",
                                 "required": true
+                            },
+                            {
+                                "name": "currStudyHere",
+                                "custom": true,
+                                "element": {
+                                    "title": "Currently studying here",
+                                    "widget": {
+                                        "formlyConfig": {
+                                            "type": "checkbox",
+                                            "fieldGroupClassName": "controls",
+                                            "className": "checkbox",
+                                            "templateOptions": {
+                                                "required": true
+                                            }
+                                        }
+                                    }
+                                }
                             },
                             {
                                 "name": "documents",

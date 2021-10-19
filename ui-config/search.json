@@ -10,6 +10,7 @@
                 "tabTitle": "Search Institute",
                 "api": "/Institute/search",
                 "activeTab": "active",
+                "privateFields": "InstituteOsConfig",
                 "filters": [
                     {
                         "key": "board",
@@ -22,7 +23,6 @@
                         "type": "autocomplete",
                         "title": "Institute Name",
                         "default": true,
-                        "defaultValue": "any",
                         "propertyPath": "instituteName",
                         "api": "/Institute/search",
                         "placeholder" : "Enter Institute name"
@@ -82,6 +82,7 @@
                 "tab": "teacher",
                 "tabTitle": "Search Teacher",
                 "api": "/Teacher/search",
+                "privateFields": "TeacherOsConfig",
                 "filters": [
                     {
                         "key": "board",
@@ -129,12 +130,12 @@
                         {
 
                             "title" : "Qualification", 
-                            "property" : "qualification"  
+                            "property" : "academicQualifications.qualification"  
                         },
                         {
 
                             "title" : "Subject", 
-                            "property" : "subject"  
+                            "property" : "experience.subjects"  
                         },
                         {
 
@@ -155,6 +156,7 @@
                 "tab": "student",
                 "tabTitle": "Search Student",
                 "api": "/Student/search",
+                "privateFields": "StudentOsConfig",
                 "filters": [
                     {
                         "key": "board",
@@ -187,15 +189,6 @@
                         "propertyPath": "contactDetails.address.pincode"
                     }
                 ],
-                "results1": {
-                    "fields": [
-                        "",
-                        "class",
-                        "",
-                        "state",
-                        "district"
-                    ]
-                },
                 "results": {
                     "fields": [
                         {
@@ -226,19 +219,5 @@
                 }
             }
         }
-    ],
-    "conditions": {
-        "text": [
-            "is",
-            "is not",
-            "any"
-        ],
-        "date": [
-            "is",
-            ">=",
-            "<=",
-            "between",
-            "any"
-        ]
-    }
+    ]
 }
