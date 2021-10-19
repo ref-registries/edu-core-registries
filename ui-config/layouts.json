@@ -6,6 +6,8 @@
             "institute": {
                 "api": "/Institute",
                 "title": "Institute Profile",
+                "headerName" : "instituteName",
+                "subHeadername" : "address.state,contactDetails.address.city",
                 "blocks": [
                     {
                         "definition": "Institute",
