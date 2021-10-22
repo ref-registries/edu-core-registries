@@ -660,7 +660,7 @@
                                         "properties": {
                                             "above13": {
                                                 "enum": [
-                                                    "Yes"
+                                                    "No"
                                                 ]
                                             },
                                             "guardianDetails": {
@@ -706,6 +706,7 @@
                                     "widget": {
                                         "formlyConfig": {
                                             "type": "radio",
+                                            "defaultValue" : "Yes",
                                             "fieldGroupClassName": "controls",
                                             "className": "radio"
                                         }

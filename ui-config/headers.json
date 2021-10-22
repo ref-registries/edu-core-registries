@@ -17,7 +17,8 @@
                 "left": [
                     {
                         "title": "Home",
-                        "redirectTo": "/profile/institute"
+                        "redirectTo": "/profile/institute",
+                        "activeTab" : "active"
                     },
                     {
                         "title": "Attestations",
@@ -26,8 +27,9 @@
                 ],
                 "right": [
                     {
-                        "image": "/assets/images/logout.png",
-                        "redirectTo": "/logout"
+                        "title": "Logout",
+                        "redirectTo": "/logout",
+                        "className" : "font-weight-bold"
                     }
                 ]
             }
