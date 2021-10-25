@@ -20,12 +20,28 @@
                     },
                     {
                         "key": "instituteName",
-                        "type": "autocomplete",
+                        "autocomplete": {
+                            "apiURL": "https://ndear.xiv.in/registry/api/v1/Institute/search",
+                            "body": {
+                                "filters": {
+                                    "instituteName": {
+                                        "startsWith": "{{value}}"
+                                    },
+                                    "affiliation._osState": {
+                                        "eq": "PUBLISHED"
+                                    }
+                                },
+                                "limit": 20,
+                                "offset": 0
+                            },
+                            "responseKey": "instituteName"
+                        },
+                        
                         "title": "Institute Name",
                         "default": true,
                         "propertyPath": "instituteName",
                         "api": "/Institute/search",
-                        "placeholder" : "Enter Institute name"
+                        "placeholder" : "Search by Institute name"
                     },
                     {
                         "key": "state",
@@ -136,74 +152,6 @@
 
                             "title" : "Subject", 
                             "property" : "experience.subjects"  
-                        },
-                        {
-
-                            "title" : "District", 
-                            "property" : "contactDetails.address.district"  
-                        },
-                        {
-
-                            "title" : "State", 
-                            "property" : "contactDetails.address.state"  
-                        }
-                    ]
-                }
-            }
-        },
-        {
-            "student": {
-                "tab": "student",
-                "tabTitle": "Search Student",
-                "api": "/Student/search",
-                "privateFields": "StudentOsConfig",
-                "filters": [
-                    {
-                        "key": "board",
-                        "type": "text",
-                        "title": "Board",
-                        "propertyPath": "educationDetails.board"
-                    },
-                    {
-                        "key": "studentName",
-                        "type": "text",
-                        "title": "Student Name",
-                        "propertyPath": "identityDetails.fullName"
-                    },
-                    {
-                        "key": "state",
-                        "type": "text",
-                        "title": "State",
-                        "propertyPath": "contactDetails.address.state"
-                    },
-                    {
-                        "key": "district",
-                        "type": "text",
-                        "title": "District",
-                        "propertyPath": "contactDetails.address.district"
-                    },
-                    {
-                        "key": "pincode",
-                        "type": "text",
-                        "title": "Pincode",
-                        "propertyPath": "contactDetails.address.pincode"
-                    }
-                ],
-                "results": {
-                    "fields": [
-                        {
-                            "title" : "Student Name", 
-                            "property" : "identityDetails.fullName"                          
-                        },
-                        {
-
-                            "title" : "Class", 
-                            "property" : "class"  
-                        },
-                        {
-
-                            "title" : "Graduation Year", 
-                            "property" : "graduationYear"  
                         },
                         {
 

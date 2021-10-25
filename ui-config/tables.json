@@ -1,6 +1,7 @@
 {
     "type": "opensaberLayoutSchema",
     "version": "0.1",
+    "limit" : "15",
     "tables": [
         {
             "teacher-attestation": {
