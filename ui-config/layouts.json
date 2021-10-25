@@ -11,7 +11,7 @@
                 "blocks": [
                     {
                         "definition": "Institute",
-                        "title": "Basic details",
+                        "title": "Institute details",
                         "add": false,
                         "edit": true,
                         "editform":"institute-setup",
@@ -44,7 +44,7 @@
                 "blocks": [
                     {
                         "definition": "Teacher",
-                        "title": "Basic details",
+                        "title": "Personal details",
                         "add": false,
                         "edit": true,
                         "editform":"teacher-setup",
@@ -55,7 +55,7 @@
                     },
                     {
                         "definition": "Teacher",
-                        "title": "Experience details",
+                        "title": "Professional Experience",
                         "add": true,
                         "addform":"teacher-experience",
                         "editform":"teacher-experience",
@@ -67,7 +67,7 @@
                     },
                     {
                         "definition": "Teacher",
-                        "title": "Academic Qualifications",
+                        "title": "Education",
                         "add": true,
                         "addform":"teacher-education",
                         "editform":"teacher-education",

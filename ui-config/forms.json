@@ -275,21 +275,6 @@
                                         }
                                     }
                                 }
-                            },
-                            {
-                                "name": "notes",
-                                "custom": true,
-                                "element": {
-                                    "title": "Note",
-                                    "widget": {
-                                        "formlyConfig": {
-                                            "type": "string",
-                                            "fieldGroupClassName": "controls",
-                                            "className": "input",
-                                              "hideExpression": "!model.attest"
-                                        }
-                                    }
-                                }
                             }
                         ]
                     }
