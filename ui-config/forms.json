@@ -192,7 +192,6 @@
                             {
                                 "name": "adminEmail",
                                 "required": true,
-                                "class": "form-check form-check-inline pl-5",
                                 "validation": {
                                     "pattern": "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z0-9.-]+$",
                                     "message": "Email is not valid."
@@ -201,7 +200,6 @@
                             {
                                 "name": "adminName",
                                 "required": true,
-                                "class": "form-check form-check-inline pl-5",
                                 "validation": {
                                     "pattern": "^[a-zA-Z]+ [a-zA-Z]+$",
                                     "message": "Name is not valid."
