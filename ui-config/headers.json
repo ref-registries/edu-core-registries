@@ -3,6 +3,10 @@
     "version": "0.1",
     "headers": [
         {
+            "blank":{
+            }
+        },
+        {
             "default":{
                 "right":[
                     {
@@ -23,6 +27,10 @@
                     {
                         "title": "Attestations",
                         "redirectTo": "/institute/attestation/institute-attestation"
+                    },
+                    {
+                        "title": "Issue Certificate",
+                        "redirectTo": "/issue-certificate"
                     }
                 ],
                 "right": [
