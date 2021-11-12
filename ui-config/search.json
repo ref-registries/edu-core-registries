@@ -33,14 +33,12 @@
                                 },
                                 "limit": 20,
                                 "offset": 0
-                            },
-                            "responseKey": "instituteName"
+                            }
                         },
                         
                         "title": "Institute Name",
                         "default": true,
                         "propertyPath": "instituteName",
-                        "api": "/Institute/search",
                         "placeholder" : "Search by Institute name"
                     },
                     {
