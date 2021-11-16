@@ -27,10 +27,6 @@
                     {
                         "title": "Attestations",
                         "redirectTo": "/institute/attestation/institute-attestation"
-                    },
-                    {
-                        "title": "Courses",
-                        "redirectTo": "/institute/courses"
                     }
                 ],
                 "right": [
@@ -68,10 +64,6 @@
                     {
                         "title": "Home",
                         "redirectTo": "/profile/student"
-                    },
-                    {
-                        "title": "Courses",
-                        "redirectTo": "/Student/courses"
                     }
                 ],
                 "right": [
