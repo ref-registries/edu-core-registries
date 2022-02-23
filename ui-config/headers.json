@@ -10,7 +10,7 @@
             "default":{
                 "right":[
                     {
-                        "title": "Login",
+                        "title": "LOGIN",
                         "redirectTo": "/login"
                     }
                 ]
@@ -20,18 +20,17 @@
             "institute": {
                 "left": [
                     {
-                        "title": "Home",
-                        "redirectTo": "/profile/institute",
-                        "activeTab" : "active"
+                        "title": "HOME",
+                        "redirectTo": "/profile/institute"
                     },
                     {
-                        "title": "Attestations",
+                        "title": "ATTESTATIONS",
                         "redirectTo": "/institute/attestation/institute-attestation"
                     }
                 ],
                 "right": [
                     {
-                        "title": "Logout",
+                        "title": "LOGOUT",
                         "redirectTo": "/logout",
                         "className" : "font-weight-bold"
                     }
@@ -42,18 +41,19 @@
             "teacher": {
                 "left": [
                     {
-                        "title": "Home",
+                        "title": "HOME",
                         "redirectTo": "/profile/teacher"
                     },
                     {
-                        "title": "Attestations",
+                        "title": "ATTESTATIONS",
                         "redirectTo": "/teacher/attestation/teacher-attestation"
                     }
                 ],
                 "right": [
                     {
-                        "image": "/assets/images/logout.png",
-                        "redirectTo": "/logout"
+                        "title": "LOGOUT",
+                        "redirectTo": "/logout",
+                        "className" : "font-weight-bold"
                     }
                 ]
             }
@@ -62,14 +62,15 @@
             "student": {
                 "left": [
                     {
-                        "title": "Home",
+                        "title": "HOME",
                         "redirectTo": "/profile/student"
                     }
                 ],
                 "right": [
                     {
-                        "image": "/assets/images/logout.png",
-                        "redirectTo": "/logout"
+                        "title": "LOGOUT",
+                        "redirectTo": "/logout",
+                        "className" : "font-weight-bold"
                     }
                 ]
             }
@@ -78,14 +79,15 @@
             "board-cbse": {
                 "left": [
                     {
-                        "title": "Attestations",
+                        "title": "ATTESTATIONS",
                         "redirectTo": "/profile/board-cbse"
                     }
                 ],
                 "right": [
                     {
-                        "image": "/assets/images/logout.png",
-                        "redirectTo": "/logout"
+                        "title": "LOGOUT",
+                        "redirectTo": "/logout",
+                        "className" : "font-weight-bold"
                     }
                 ]
             }

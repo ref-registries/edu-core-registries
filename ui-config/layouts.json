@@ -5,13 +5,14 @@
         {
             "institute": {
                 "api": "/Institute",
-                "title": "Institute Profile",
+                "title": "INSTITUTE_PROFILE",
+                "langKey" : "institute",
                 "headerName" : "instituteName",
                 "subHeadername" : "address.state,contactDetails.address.city",
                 "blocks": [
                     {
                         "definition": "Institute",
-                        "title": "Institute details",
+                        "title": "INSTITUTE_DEATILS",
                         "add": false,
                         "edit": true,
                         "editform":"institute-setup",
@@ -22,7 +23,7 @@
                     },
                     {
                         "definition": "Institute",
-                        "title": "Affiliation details",
+                        "title": "AFFILIATION_DETAILS",
                         "add": true,
                         "addform":"affiliation",
                         "claimEdit": true,
@@ -38,13 +39,14 @@
         {
             "teacher": {
                 "api": "/Teacher",
-                "title": "Teacher Profile",
+                "title": "TEACHER_PROFILE",
+                "langKey" : "teacherStudent",
                 "headerName" : "identityDetails.fullName",
                 "subHeadername" : "contactDetails.address.state,contactDetails.address.city",
                 "blocks": [
                     {
                         "definition": "Teacher",
-                        "title": "Personal details",
+                        "title": "PERSONAL_DETAILS",
                         "add": false,
                         "edit": true,
                         "editform":"teacher-setup",
@@ -55,7 +57,7 @@
                     },
                     {
                         "definition": "Teacher",
-                        "title": "Professional Experience",
+                        "title": "PROFESSIONAL_EXPERIENCE",
                         "add": true,
                         "addform":"teacher-experience",
                         "editform":"teacher-experience",
@@ -67,7 +69,7 @@
                     },
                     {
                         "definition": "Teacher",
-                        "title": "Education",
+                        "title": "EDUCATION",
                         "add": true,
                         "addform":"teacher-education",
                         "editform":"teacher-education",
@@ -83,13 +85,14 @@
         {
             "student": {
                 "api": "/Student",
-                "title": "Student Profile",
+                "title": "STUDENT_PROFILE",
+                "langKey" : "teacherStudent",
                 "headerName" : "identityDetails.fullName",
                 "subHeadername" : "contactDetails.address.state,contactDetails.address.city",
                 "blocks": [
                     {
                         "definition": "Student",
-                        "title": "Basic details",
+                        "title": "BASIC_DETAILS",
                         "add": false,
                         "edit": true,
                         "editform":"student-setup",
@@ -100,7 +103,7 @@
                     },
                     {
                         "definition": "Student",
-                        "title": "Education details",
+                        "title": "EDUCATION_DEATILS",
                         "add": true,
                         "addform":"student-education",
                         "editform":"student-education",
