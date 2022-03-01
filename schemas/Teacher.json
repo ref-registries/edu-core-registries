@@ -92,7 +92,9 @@
       }
     ],
     "internalFields": [],
-    "inviteRoles":["anonymous"],
+    "inviteRoles":["edu-admin"],
+    "roles":["edu-admin"],
+    "deleteRoles": ["edu-admin"],
     "enableLogin": true,
     "ownershipAttributes": [
       {

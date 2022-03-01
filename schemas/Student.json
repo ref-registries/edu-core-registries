@@ -92,7 +92,8 @@
         "credentialTemplate": {}
       }
     ],
-    "inviteRoles":["anonymous"],
+    "inviteRoles":["edu-admin","edu-staff"],
+    "deleteRoles":["edu-admin","edu-staff"],
     "enableLogin": true,
     "ownershipAttributes": [
       {
