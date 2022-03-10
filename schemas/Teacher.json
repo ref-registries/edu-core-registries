@@ -75,24 +75,33 @@
     ],
     "attestationPolicies": [
       {
+        "name": "TeacherExperience",
         "property": "experience/[]",
         "paths": [
           "experience"
         ],
+        "attestationProperties": {
+          "institute": "$.experience[0].institute"
+        },
         "attestorEntity": "Institute",
-        "conditions": "(ATTESTOR#$.instituteName#.contains(REQUESTER#$.institute#))"
-      },
-      {
+        "conditions": "(ATTESTOR#$.[*]#.contains('board-cbse'))"
+      }, {
+        "name": "TeacherQualification",
         "property": "academicQualifications/[]",
         "paths": [
           "academicQualifications"
         ],
+        "attestationProperties": {
+          "instituteOfStudy": "$.academicQualifications[0].institute"
+        },
         "attestorEntity": "Institute",
-        "conditions": "(ATTESTOR#$.instituteName#.contains(REQUESTER#$.institute#))"
+        "conditions": "(ATTESTOR#$.[*]#.contains('board-cbse'))"
       }
     ],
     "internalFields": [],
-    "inviteRoles":["anonymous"],
+    "inviteRoles":["edu-admin"],
+    "roles":["edu-admin"],
+    "deleteRoles": ["edu-admin"],
     "enableLogin": true,
     "ownershipAttributes": [
       {

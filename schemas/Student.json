@@ -84,7 +84,7 @@
           "name": "$.identityDetails.fullName",
           "institute": "$.educationDetails[0].institute"
         },
-        "paths": ["$.educationDetails[?(@.osid == 'PROPERTY_ID')]['institute', 'program', 'graduationYear', 'marks']", "$.identityDetails['fullName']"],
+        "paths": ["$.educationDetails[*]['institute', 'program', 'graduationYear', 'marks']", "$.identityDetails['fullName']"],
         "type": "MANUAL",
         "attestorEntity": "Teacher",
         "conditions": "(ATTESTOR#$.experience.[*].institute#.contains(REQUESTER#$.institute#))",
@@ -92,7 +92,8 @@
         "credentialTemplate": {}
       }
     ],
-    "inviteRoles":["anonymous"],
+    "inviteRoles":["edu-admin","edu-staff"],
+    "deleteRoles":["edu-admin","edu-staff"],
     "enableLogin": true,
     "ownershipAttributes": [
       {

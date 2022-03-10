@@ -22,10 +22,6 @@
           "type": "string",
           "title": "Institute Name"
         },
-        "address": {
-          "$ref": "Common.json/#/definitions/Address",
-          "title": "Address"
-        },
         "establishmentYear": {
           "$id": "#/properties/establishmentYear",
           "type": "string",
@@ -36,16 +32,8 @@
           "type": "string",
           "title": "GSTN ID"
         },
-        "contactNumber": {
-          "$id": "#/properties/contactNumber",
-          "type": "string",
-          "title": "Landline / Mobile"
-        },
-        "email": {
-          "$id": "#/properties/email",
-          "type": "string",
-          "format": "email",
-          "title": "Email"
+        "contactDetails": {
+          "$ref": "Common.json/#/definitions/ContactDetails"
         },
         "website": {
           "$id": "#/properties/website",
@@ -160,15 +148,27 @@
     ],
     "attestationPolicies": [
       {
+        "name": "InstituteAffiliation",
         "property": "affiliation/[]",
         "paths": [
           "affiliation",
           "instituteName"
         ],
+        "attestationProperties": {
+          "institute": "$.instituteName"
+        },
         "attestorEntity": "board-cbse",
         "conditions": "(ATTESTOR#$.[*]#.contains('board-cbse'))"
       }
     ],
-    "subjectJsonPath": "email"
+    "subjectJsonPath": "email",
+    "inviteRoles": ["anonymous"],
+    "ownershipAttributes": [
+      {
+        "email":"/ContactDetails/email",
+        "mobile":"/ContactDetails/mobile",
+        "userId":"/instituteName"
+      }
+    ]
   }
 }
