@@ -84,7 +84,6 @@
           "institute": "$.experience[0].institute"
         },
         "attestorEntity": "Institute",
-        "attestorPlugin": "did:internal:ClaimPluginActor?entity=Institute",
         "conditions": "(ATTESTOR#$.[*]#.contains('board-cbse'))"
       }, {
         "name": "TeacherQualification",
@@ -96,7 +95,6 @@
           "instituteOfStudy": "$.academicQualifications[0].institute"
         },
         "attestorEntity": "Institute",
-        "attestorPlugin": "did:internal:ClaimPluginActor?entity=Institute",
         "conditions": "(ATTESTOR#$.[*]#.contains('board-cbse'))"
       }
     ],

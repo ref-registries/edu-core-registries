@@ -158,7 +158,6 @@
           "institute": "$.instituteName"
         },
         "attestorEntity": "board-cbse",
-        "attestorPlugin": "did:internal:ClaimPluginActor?entity=board-cbse",
         "conditions": "(ATTESTOR#$.[*]#.contains('board-cbse'))"
       }
     ],
