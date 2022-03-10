@@ -75,20 +75,29 @@
     ],
     "attestationPolicies": [
       {
+        "name": "TeacherExperience",
         "property": "experience/[]",
         "paths": [
           "experience"
         ],
+        "attestationProperties": {
+          "institute": "$.experience[0].institute"
+        },
         "attestorEntity": "Institute",
-        "conditions": "(ATTESTOR#$.instituteName#.contains(REQUESTER#$.institute#))"
-      },
-      {
+        "attestorPlugin": "did:internal:ClaimPluginActor?entity=Institute",
+        "conditions": "(ATTESTOR#$.[*]#.contains('board-cbse'))"
+      }, {
+        "name": "TeacherQualification",
         "property": "academicQualifications/[]",
         "paths": [
           "academicQualifications"
         ],
+        "attestationProperties": {
+          "instituteOfStudy": "$.academicQualifications[0].institute"
+        },
         "attestorEntity": "Institute",
-        "conditions": "(ATTESTOR#$.instituteName#.contains(REQUESTER#$.institute#))"
+        "attestorPlugin": "did:internal:ClaimPluginActor?entity=Institute",
+        "conditions": "(ATTESTOR#$.[*]#.contains('board-cbse'))"
       }
     ],
     "internalFields": [],
