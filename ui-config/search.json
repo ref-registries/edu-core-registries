@@ -26,9 +26,6 @@
                                 "filters": {
                                     "instituteName": {
                                         "startsWith": "{{value}}"
-                                    },
-                                    "affiliation._osState": {
-                                        "eq": "PUBLISHED"
                                     }
                                 },
                                 "limit": 20,

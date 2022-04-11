@@ -161,7 +161,7 @@
                             },
                             {
                                 "name": "contactNumber",
-                                "type": "number",
+                                "type": "string",
                                 "required": true
                             },
                             {
@@ -449,9 +449,6 @@
                                         "filters": {
                                             "instituteName": {
                                                 "contains": "{{value}}"
-                                            },
-                                            "affiliation._osState": {
-                                                "eq": "PUBLISHED"
                                             }
                                         },
                                         "limit": 20,
@@ -466,8 +463,7 @@
                                         "filters": {
                                             "instituteName": {
                                                 "contains": "{{value}}"
-                                            },
-                                            "affiliation._osStatus": "PUBLISHED"
+                                            }
                                         },
                                         "limit": 20,
                                         "offset": 0
@@ -532,9 +528,6 @@
                                         "filters": {
                                             "instituteName": {
                                                 "contains": "{{value}}"
-                                            },
-                                            "affiliation._osState": {
-                                                "eq": "PUBLISHED"
                                             }
                                         },
                                         "limit": 20,
@@ -858,9 +851,6 @@
                                         "filters": {
                                             "instituteName": {
                                                 "contains": "{{value}}"
-                                            },
-                                            "affiliation._osState": {
-                                                "eq": "PUBLISHED"
                                             }
                                         },
                                         "limit": 20,
