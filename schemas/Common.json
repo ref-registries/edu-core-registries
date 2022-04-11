@@ -137,7 +137,10 @@
             "Head teacher",
             "Principal",
             "VicePrincipal",
-            "Lecture"
+            "Acting head teacher",
+            "Teacher",
+            "Instructor positioned as per RTE",
+            "Lecturer"
           ]
         },
         "subjects": {
