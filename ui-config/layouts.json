@@ -29,6 +29,7 @@
                         "claimEdit": true,
                         "editform":"affiliation",
                         "multiple": true,
+                        "headValue" : "affiliationNumber",
                         "fields": {
                             "includes": ["affiliation"]
                         }
@@ -63,6 +64,7 @@
                         "editform":"teacher-experience",
                         "claimEdit": true,
                         "multiple": true,
+                        "headValue" : "teacherType",
                         "fields": {
                             "includes": ["experience"]
                         }
@@ -75,6 +77,7 @@
                         "editform":"teacher-education",
                         "claimEdit": true,
                         "multiple": true,
+                        "headValue" : "qualification",
                         "fields": {
                             "includes": ["academicQualifications"]
                         }
@@ -110,6 +113,7 @@
                         "edit": false,
                         "claimEdit": true,
                         "multiple": true,
+                        "headValue" : "class",
                         "fields": {
                             "includes": ["educationDetails"]
                         }
