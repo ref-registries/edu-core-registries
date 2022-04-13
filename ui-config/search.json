@@ -27,6 +27,7 @@
                                     "instituteName": {
                                         "startsWith": "{{value}}"
                                     }
+                                    
                                 },
                                 "limit": 20,
                                 "offset": 0
@@ -49,24 +50,14 @@
                         "type": "text",
                         "title": "DISTRICT",
                         "propertyPath": "address.district"
-                    },
-                    {
-                        "key": "pincode",
-                        "type": "text",
-                        "title": "PINCODE",
-                        "propertyPath": "address.pincode"
                     }
+                    
                 ],
                 "results": {
                     "fields": [
                         {
                             "title" : "INSTITUTE_NAME", 
                             "property" : "instituteName"                          
-                        },
-                        {
-
-                            "title" : "DISTRICT", 
-                            "property" : "address.district"  
                         },
                         {
 
@@ -119,12 +110,6 @@
                         "type": "text",
                         "title": "DISTRICT",
                         "propertyPath": "contactDetails.address.district"
-                    },
-                    {
-                        "key": "pincode",
-                        "type": "text",
-                        "title": "PINCODE",
-                        "propertyPath": "contactDetails.address.pincode"
                     }
                 ],
                 "results": {
@@ -137,16 +122,6 @@
 
                             "title" : "QUALIFICATION", 
                             "property" : "academicQualifications.qualification"  
-                        },
-                        {
-
-                            "title" : "SUBJECT", 
-                            "property" : "experience.subjects"  
-                        },
-                        {
-
-                            "title" : "DISTRICT", 
-                            "property" : "contactDetails.address.district"  
                         },
                         {
 
