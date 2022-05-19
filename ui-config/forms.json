@@ -448,11 +448,14 @@
                                 "name": "instituteName",
                                 "required": true,
                                 "autocomplete": {
-                                    "apiURL": "https://ndear.xiv.in/registry/api/v1/Institute/search",
+                                    "apiURL": "https://demo-education-registry.xiv.in/registry/api/v1/Institute/search",
                                     "body": {
                                         "filters": {
                                             "instituteName": {
                                                 "contains": "{{value}}"
+                                            },
+                                            "instituteAffiliation._osState": {
+                                                "eq": "PUBLISHED"
                                             }
                                         },
                                         "limit": 20,
@@ -461,13 +464,14 @@
                                     "responseKey": "instituteName"
                                 },
                                 "autofill": {
-                                    "apiURL": "https://ndear.xiv.in/registry/api/v1/Institute/search",
+                                    "apiURL": "https://demo-education-registry.xiv.in/registry/api/v1/Institute/search",
                                     "method": "POST",
                                     "body": {
                                         "filters": {
                                             "instituteName": {
                                                 "contains": "{{value}}"
-                                            }
+                                            },
+                                            "instituteAffiliation._osStatus": "PUBLISHED"
                                         },
                                         "limit": 20,
                                         "offset": 0
@@ -527,11 +531,14 @@
                                 "name": "instituteName",
                                 "required": true,
                                 "autocomplete": {
-                                    "apiURL": "https://ndear.xiv.in/registry/api/v1/Institute/search",
+                                    "apiURL": "https://demo-education-registry.xiv.in/registry/api/v1/Institute/search",
                                     "body": {
                                         "filters": {
                                             "instituteName": {
                                                 "contains": "{{value}}"
+                                            },
+                                            "instituteAffiliation._osState": {
+                                                "eq": "PUBLISHED"
                                             }
                                         },
                                         "limit": 20,
@@ -540,7 +547,7 @@
                                     "responseKey": "instituteName"
                                 },
                                 "autofill": {
-                                    "apiURL": "https://ndear.xiv.in/registry/api/v1/Institute/search",
+                                    "apiURL": "https://demo-education-registry.xiv.in/registry/api/v1/Institute/search",
                                     "method": "POST",
                                     "body": {
                                         "filters": {
@@ -850,11 +857,14 @@
                                 "name": "institute",
                                 "required": true,
                                 "autocomplete": {
-                                    "apiURL": "https://ndear.xiv.in/registry/api/v1/Institute/search",
+                                    "apiURL": "https://demo-education-registry.xiv.in/registry/api/v1/Institute/search",
                                     "body": {
                                         "filters": {
                                             "instituteName": {
                                                 "contains": "{{value}}"
+                                            },
+                                            "instituteAffiliation._osState": {
+                                                "eq": "PUBLISHED"
                                             }
                                         },
                                         "limit": 20,
@@ -863,7 +873,7 @@
                                     "responseKey": "instituteName"
                                 },
                                 "autofill": {
-                                    "apiURL": "https://ndear.xiv.in/registry/api/v1/Institute/search",
+                                    "apiURL": "https://demo-education-registry.xiv.in/registry/api/v1/Institute/search",
                                     "method": "POST",
                                     "body": {
                                         "filters": {
