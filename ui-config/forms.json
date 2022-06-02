@@ -613,6 +613,7 @@
                                             "templateOptions": {
                                                 "required": true
                                             }
+                                            
                                         }
                                     }
                                 }
@@ -621,16 +622,28 @@
                                 "name": "notes",
                                 "custom": true,
                                 "element": {
-                                    "title": "NOTE",
+                                    "title": "NOTES",
                                     "widget": {
                                         "formlyConfig": {
                                             "type": "string",
                                             "fieldGroupClassName": "controls",
+                                            
                                             "className": "input",
-                                              "hideExpression": "!model.attest"
+                                              "hideExpression": "!model.attest",
+                                              "templateOptions": {
+                                                "maxLength":250
+                                            }
+                                              
+                                              
+                                              
                                         }
+                                       
                                     }
+                                    
+                                    
+
                                 }
+                               
                             }
                         ]
                     }
@@ -944,13 +957,17 @@
                                 "name": "notes",
                                 "custom": true,
                                 "element": {
-                                    "title": "NOTE",
+                                    "title": "NOTES",
                                     "widget": {
                                         "formlyConfig": {
                                             "type": "string",
                                             "fieldGroupClassName": "controls",
                                             "className": "input",
-                                              "hideExpression": "!model.attest"
+                                              "hideExpression": "!model.attest",
+                                              "templateOptions": {
+                                                "maxLength":250
+                                            }
+                                              
                                         }
                                     }
                                 }
