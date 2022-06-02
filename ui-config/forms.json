@@ -613,6 +613,7 @@
                                             "templateOptions": {
                                                 "required": true
                                             }
+                                            
                                         }
                                     }
                                 }
@@ -626,11 +627,23 @@
                                         "formlyConfig": {
                                             "type": "string",
                                             "fieldGroupClassName": "controls",
+                                            
                                             "className": "input",
-                                              "hideExpression": "!model.attest"
+                                              "hideExpression": "!model.attest",
+                                              "templateOptions": {
+                                                "maxLength":250
+                                            }
+                                              
+                                              
+                                              
                                         }
+                                       
                                     }
+                                    
+                                    
+
                                 }
+                               
                             }
                         ]
                     }
@@ -950,7 +963,11 @@
                                             "type": "string",
                                             "fieldGroupClassName": "controls",
                                             "className": "input",
-                                              "hideExpression": "!model.attest"
+                                              "hideExpression": "!model.attest",
+                                              "templateOptions": {
+                                                "maxLength":250
+                                            }
+                                              
                                         }
                                     }
                                 }
