@@ -622,7 +622,7 @@
                                 "name": "notes",
                                 "custom": true,
                                 "element": {
-                                    "title": "NOTES",
+                                    "title": "NOTE",
                                     "widget": {
                                         "formlyConfig": {
                                             "type": "string",
@@ -957,7 +957,7 @@
                                 "name": "notes",
                                 "custom": true,
                                 "element": {
-                                    "title": "NOTES",
+                                    "title": "NOTE",
                                     "widget": {
                                         "formlyConfig": {
                                             "type": "string",
