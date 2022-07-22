@@ -19,7 +19,8 @@
                         "fields": {
                             "includes": ["*"],
                             "excludes": ["affiliation"]
-                        }
+                        },
+                        "propertyShowFirst" : [ "instituteName", "email"]
                     },
                     {
                         "definition": "Institute",
@@ -33,7 +34,8 @@
                         "canRaiseClaim" : true,
                         "fields": {
                             "includes": ["affiliation"]
-                        }
+                        },
+                        "propertyShowFirst" : [ "affiliationNumber", "medium", "grantYear", "expiryYear"]
                     }
                 ]
             }
@@ -55,7 +57,9 @@
                         "fields": {
                             "includes": ["*"],
                             "excludes": ["experience","academicQualifications"]
-                        }
+                        },
+                        "propertyShowFirst" : [ "fullName", "mobile", "email"]
+
                     },
                     {
                         "definition": "Teacher",
@@ -69,7 +73,8 @@
                         "canRaiseClaim" : true,
                         "fields": {
                             "includes": ["experience"]
-                        }
+                        },
+                        "propertyShowFirst" : [ "employmentType", "instituteName"]
                     },
                     {
                         "definition": "Teacher",
@@ -83,7 +88,8 @@
                         "headValue" : "qualification",
                         "fields": {
                             "includes": ["academicQualifications"]
-                        }
+                        },
+                        "propertyShowFirst" : [ "qualification", "instituteName", "graduationYear"]
                     }
                 ]
             }
@@ -105,7 +111,8 @@
                         "fields": {
                             "includes": ["*"],
                             "excludes": ["educationDetails"]
-                        }
+                        },
+                        "propertyShowFirst" : [ "fullName", "mobile", "email"]
                     },
                     {
                         "definition": "Student",
